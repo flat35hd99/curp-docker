@@ -8,6 +8,6 @@ RUN pip install --no-cache-dir numpy==1.21.1
 RUN git clone --depth 1 https://github.com/yamatolab/current-calculations-for-proteins.git curp \
     && cd curp \
     && pip install --no-cache-dir . \
-    rm -rf *
+    && rm -rf *
 
 CMD ["curp", "--help"]
